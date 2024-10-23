@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-login-desktop {
+  background-image: url("./../assets/login-sidebar.svg");
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Barlow', sans-serif;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

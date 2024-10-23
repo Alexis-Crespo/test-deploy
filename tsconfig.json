@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "noEmitOnError": false,
+    "noFallthroughCasesInSwitch": false,
+    "strict": false,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@atoms/*": ["./src/components/ui/atoms/*"],
+      "@molecules/*": ["./src/components/ui/molecules/*"],
+      "@organisms/client": ["./src/components/ui/organisms/client.ts"],
+      "@organisms/server": ["./src/components/ui/organisms/server.ts"],
+      "@organisms/skeleton": ["./src/components/ui/organisms/skeleton.ts"],
+      "@containers/client": ["./src/containers/client.ts"],
+      "@containers/server": ["./src/containers/server.ts"],
+      "@hooks/client": ["./src/hooks/client.ts"],
+      "@hooks/server": ["./src/hooks/server.ts"],
+      "@dependencies/*": ["./src/components/dependencies/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    // Necessary for PricesCarousel
+    // const carouselItemWidths = [...document.getElementsByClassName(styles.carouselItem)]
+    "downlevelIteration": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".eslintrc.js",
+    "src",
+    ".next/types/**/*.ts",
+    "src/types/modules/custom.d.ts",
+    "src/types/modules/next-auth.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}
