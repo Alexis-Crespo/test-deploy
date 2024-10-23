@@ -9,7 +9,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import EmptyTable from "../icons/EmptyTable";
-import Trash from "../icons/trash";
+import Trash from "../icons/Trash";
 
 interface TableApoderadoProps {
   apoderados: string[]; // Recibir los correos de los apoderados
