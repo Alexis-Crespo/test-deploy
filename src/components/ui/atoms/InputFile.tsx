@@ -12,7 +12,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import Trash from "../icons/trash";
+import Trash from "../icons/Trash";
 import Upload from "../icons/Upload";
 import FileUpload from "../icons/FileUpload";
 import axios from "axios";
